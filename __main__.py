@@ -2,7 +2,7 @@ from os import (
     sep,
     environ,
 )
-from typing import Type, Tuple
+from typing import Type, Tuple, Literal
 from dotenv import load_dotenv
 
 from pydantic import BaseModel
@@ -54,6 +54,7 @@ class Settings(BaseSettings):
 
 
     ORIGIN: str = "From Initial Value"
+    CURRENT_ENVIRONEMNET_NAME: Literal["LOCAL", "MODAL", "GCP", "AWS"] = "LOCAL"
     OTHER_SETTING: SubModel = SubModel()
 
 

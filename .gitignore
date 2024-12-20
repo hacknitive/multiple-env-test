@@ -129,7 +129,7 @@ doc/figma/
 good-configs
 *.moj*
 *.mine*
-.env*
-!.env.example
+# .env*
+# !.env.example
 old
 automatic_git_status_add_commit_push.sh

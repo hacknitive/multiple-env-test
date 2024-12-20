@@ -7,5 +7,6 @@ services:
       dockerfile: Dockerfile
     environment:
       ORIGIN : "From docker compose"
+      CURRENT_ENVIRONEMNET_NAME : "GCP"
       OTHER_SETTING__FOO : "foo docker compose"
       OTHER_SETTING__BAR :  4
