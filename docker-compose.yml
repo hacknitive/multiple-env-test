@@ -1,0 +1,11 @@
+# docker compose --env-file .env.x up
+services:
+
+  ucube-event-logger:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      ORIGIN : "From docker compose"
+      OTHER_SETTING__FOO : "foo docker compose"
+      OTHER_SETTING__BAR :  4
